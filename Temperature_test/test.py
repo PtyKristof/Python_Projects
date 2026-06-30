@@ -1,10 +1,12 @@
+#Szenzorunk előállít 5 hőmérsékletet 20 és 60 fok között, amelyeket átlagolunk és kiválasztjuk a maximumot. Ezeket a végén kiírjuk
+
 import random
 import time
 from datetime import datetime
 
 
-class Sensor:
-    def __init__(self, min_temp: float = 20.0, max_temp: float = 60.0):
+class Sensor: 
+    def __init__(self, min_temp: float = 20.0, max_temp: float = 60.0): 
         self.min_temp = min_temp
         self.max_temp = max_temp
 
