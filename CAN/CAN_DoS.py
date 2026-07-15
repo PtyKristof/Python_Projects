@@ -19,9 +19,9 @@ Replay Attack: Previously recorded legitimate CAN messages are retransmitted at 
 import pandas as pd
 from pathlib import Path
 
-csv_path = r"C:\Users\Kristóf\Desktop\EV_Projekt\Python_Projects\CAN\CSV\DoS_dataset.csv"
+csv_path = r"C:\Users\Kristóf\Desktop\CSV\CAN\DoS_dataset.csv"
 
- 
+
 # Oszlopneveket mi adjuk meg, mert a fájlban nincs fejléc.
 #    timestamp, can_id, dlc, majd 8 darab data oszlop, végül flag.
 column_names = ["timestamp", "can_id", "dlc"] + [f"data{i}" for i in range(8)] + ["flag"] 

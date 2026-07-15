@@ -25,7 +25,12 @@ This code contains the component sizing calculations required for the design of 
 
 
 ## CAN:
-### CAN_test
+Data source: https://www.kaggle.com/datasets/pranavjha24/car-hacking-dataset
+### CAN_DoS
 The program reads the DoS_dataset.csv file, counts the number of normal (R) and attack (T) messages, identifies the CAN ID most frequently targeted by the attack, and calculates the average time interval between messages for both the entire dataset and the attack messages only.
 
-    Data source: https://www.kaggle.com/datasets/pranavjha24/car-hacking-dataset
+### CAN_Fuzzy
+The program reads the Fuzzy_dataset.csv file, counts the number and proportion of normal (R) and attack (T) messages, determines the number of unique CAN IDs present, and identifies the CAN IDs most frequently injected during the fuzzing attack.
+
+### CAN_Geardata
+The program reads the gear_dataset.csv file, analyzes the distribution of normal (R) and attack (T) messages, identifies the most frequently targeted CAN ID, and compares the payload patterns of normal and spoofed messages to highlight differences introduced by the gear spoofing attack.
